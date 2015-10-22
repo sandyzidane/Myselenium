@@ -55,7 +55,7 @@ for file_name in this_dir_has_file:
 		else:
 			shutil.move(saved_file_name + '-1.png', new_directory)
 	# 测试完了之后，把待测的文件全部移动到“already_tested”文件夹去
-	if (file_name) in os.listdir(u'e:\python\selenium\\already_tested'):
+	if file_name in os.listdir(u'e:\python\selenium\\already_tested'):
 		os.remove(u'e:\python\selenium\\already_tested\\' + file_name)
 		shutil.move(testfile_dir + file_name, u'e:\python\selenium\\already_tested')
 	else:
