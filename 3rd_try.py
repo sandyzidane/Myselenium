@@ -7,50 +7,31 @@ import shutil
 import os
 import read_file_is_good as r
 import json
-
-# test_page = "http://219.223.190.240:8081/test/"
-
-
-
+# 测试服务器链接前半部分，通过文章ID来访问
 hf_tst_page = u'http://121.15.171.116:8081/wap/sharenews.do?newsId='
-testfile_dir = u'e:\python\selenium\gonna_test\\'  # 待测试文件所在文件夹
-this_dir_has_file = os.listdir(testfile_dir)  # 列出待测文件夹中的所有文件
-gonna_save_pic_dir = u'e:\python\selenium\gogogo\\'  # 将要用来保存截图的文件夹
+# 待测试文件所在文件夹
+testfile_dir = u'e:\\python\selenium\\gonna_test\\'
+# 列出待测文件夹中的所有文件
+this_dir_has_file = os.listdir(testfile_dir)
+# 保存截图的文件夹
+Jietu_dir = u'e:\\python\\selenium\\gogogo\\'
 
-driver = webdriver.Firefox()  # 初始化webdriver
+driver = webdriver.Firefox()  # 初始化driver
 
 for file_name in this_dir_has_file:  # 遍历所有文件
 
-	want = r.read_file_get_thing(testfile_dir + file_name)
-	want.get_ya()
+	want = r.read_file_get_thing(testfile_dir + file_name)		# 打开一个待测文件
 
+	for i_count in range(want.changdu):		# 对文件内的每个id，拼接为浏览器可访问的地址，每个名字用来命名截图
 
-	for want_id in want.origin_id:
-
-		final_test_url = hf_tst_page + want_id + u'&uid=1788'  # 拼接待测链接为浏览器可识别的url格式
-		saved_file_name = want.dic[want_id] + '.png'  # 给待测链接截图命名
-		new_directory = os.path.join(gonna_save_pic_dir, file_name + "\\")  # 根据测试文件名创建新文件夹
+		final_test_url = hf_tst_page + want.good_get_id(i_count) + u'&uid=1788'  # 拼接
+		saved_file_name = want.good_get_name(i_count) + '.png'  # 给待测链接截图命名
+		new_directory = os.path.join(Jietu_dir, file_name + "\\")  # 根据测试文件名创建新文件夹
 
 		if not os.path.exists(new_directory):
 			os.makedirs(new_directory)
 
 		print testfile_dir + file_name
-
-
-
-
-		# time.sleep(1)
-		# input_box = driver.find_element_by_id("url")
-		# input_box.send_keys(check_url)
-		# driver.find_element_by_xpath("/html/body/form/input[2]").click()
-		# time.sleep(3)
-
-		# switch_to_another_windows()
-		# driver.execute_script('''
-		#	var q=document.documentElement.scrollTop = 10000
-		#	''')
-		# print check_url_name, check_url
-
 
 		driver.get(final_test_url)  # 打开测试链接
 		driver.get_screenshot_as_file(saved_file_name)  # 测试接口处理过后截图
@@ -66,11 +47,10 @@ for file_name in this_dir_has_file:  # 遍历所有文件
 		else:
 			shutil.move(check_url_name + '-1.png', new_directory)
 
-	f.close()
 	if (file_name) in os.listdir(u'e:\python\selenium\\already_tested'):
 		os.remove(u'e:\python\selenium\\already_tested\\' + file_name)
 		shutil.move(testfile_dir + file_name, u'e:\python\selenium\\already_tested')
 	else:
 		shutil.move(testfile_dir + file_name, u'e:\python\selenium\\already_tested')
 
-driver.quit()  # 退出webdriver
+driver.quit()
