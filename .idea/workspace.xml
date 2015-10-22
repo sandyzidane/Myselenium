@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1ee05b47-862d-4f76-a910-edcd24a74895" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3rd_try.py" afterPath="$PROJECT_DIR$/3rd_try.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/read_file_is_good.py" afterPath="$PROJECT_DIR$/read_file_is_good.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="selenium.iws" />
@@ -28,8 +27,8 @@
       <file leaf-file-name="3rd_try.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/3rd_try.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.5125698">
-              <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.55172414">
+              <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
               <folding>
                 <element signature="e#23#36#0" expanded="true" />
               </folding>
@@ -59,8 +58,8 @@
         <option value="$PROJECT_DIR$/makedir.py" />
         <option value="$PROJECT_DIR$/multi_browser.py" />
         <option value="$PROJECT_DIR$/test_input.py" />
-        <option value="$PROJECT_DIR$/3rd_try.py" />
         <option value="$PROJECT_DIR$/read_file_is_good.py" />
+        <option value="$PROJECT_DIR$/3rd_try.py" />
       </list>
     </option>
   </component>
@@ -194,7 +193,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FullScreen" value="false" />
   </component>
-  <component name="RunManager" selected="Python.read_file_is_good">
+  <component name="RunManager" selected="Python.3rd_try">
     <configuration default="false" name="3rd_try" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -375,8 +374,8 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.read_file_is_good" />
-        <item index="1" class="java.lang.String" itemvalue="Python.3rd_try" />
+        <item index="0" class="java.lang.String" itemvalue="Python.3rd_try" />
+        <item index="1" class="java.lang.String" itemvalue="Python.read_file_is_good" />
         <item index="2" class="java.lang.String" itemvalue="Python.makedir" />
       </list>
     </recent_temporary>
@@ -410,12 +409,18 @@
       <option name="project" value="LOCAL" />
       <updated>1445482633563</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="删除了不需要的文件，重新写了代码，注释的更清楚&#10;根据pep8 标准改了一些地方，感觉命名这么长要死啊">
+      <created>1445483287990</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1445483287990</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -423,8 +428,8 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976827" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32344213" sideWeight="0.4898606" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3771812" sideWeight="0.49619773" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32214764" sideWeight="0.4898606" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3771812" sideWeight="0.49619773" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32751676" sideWeight="0.49746513" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1869455" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -456,7 +461,8 @@
     <MESSAGE value="fuck?&#10;" />
     <MESSAGE value="考虑到访问原文还是需要url，所以添加了good_get_url方法" />
     <MESSAGE value="删除了不需要的文件，重新写了代码，注释的更清楚" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除了不需要的文件，重新写了代码，注释的更清楚" />
+    <MESSAGE value="删除了不需要的文件，重新写了代码，注释的更清楚&#10;根据pep8 标准改了一些地方，感觉命名这么长要死啊" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除了不需要的文件，重新写了代码，注释的更清楚&#10;根据pep8 标准改了一些地方，感觉命名这么长要死啊" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -574,8 +580,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/3rd_try.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.5125698">
-          <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.55172414">
+          <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
           <folding>
             <element signature="e#23#36#0" expanded="true" />
           </folding>

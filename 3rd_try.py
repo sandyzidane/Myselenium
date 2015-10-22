@@ -50,7 +50,7 @@ for file_name in this_dir_has_file:
 		# 原网页截图
 		driver.get_screenshot_as_file(saved_file_name + '-1.png')
 		if (saved_file_name + '-1.png') in os.listdir(new_directory):
-			os.remove(saved_file_name + '-1.png')
+			os.remove(new_directory + saved_file_name + '-1.png')
 			shutil.move(saved_file_name + '-1.png', new_directory)
 		else:
 			shutil.move(saved_file_name + '-1.png', new_directory)
